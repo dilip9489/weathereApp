@@ -19,7 +19,6 @@ function WeatherApp() {
      
 
     try {
-        setLoading(true);
       const response = await fetch(`${API_URL}?key=${API_KEY}&q=${city}`);
       
       const data = await response.json();
@@ -27,7 +26,7 @@ function WeatherApp() {
          
         alert("Failed to fetch weather data");  
         setWeatherData(null);  
-        setCity('')
+        
       } else {
         setWeatherData(data);  
       }
@@ -42,7 +41,7 @@ function WeatherApp() {
 
   return (
     <div className="weather-app">
-      <div className="weather-cards ">
+      <div className="search-container">
         <input
           type="text"
           value={city}
@@ -54,7 +53,7 @@ function WeatherApp() {
       {loading && <p>Loading data…</p>}
      
       {weatherData && (
-        <div className="search-container">
+        <div className="weather-cards">
           <div className="weather-card">
             <h3>Temperature</h3>
             <p>{weatherData.current.temp_c} °C</p>
