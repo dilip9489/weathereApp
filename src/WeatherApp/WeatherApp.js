@@ -34,9 +34,9 @@ function WeatherApp() {
         console.log("Error Fetching Weather Data:",err);
         
         setWeatherData(null);
-    } finally {
-      setLoading(false);
-    }
+    }  
+
+    setLoading(false);
   };
 
   return (
@@ -50,7 +50,7 @@ function WeatherApp() {
         />
         <button onClick={fetchWeatherData}>Search</button>
       </div>
-      {loading && <p>Loading data…</p>}
+      {loading && <p >Loading data…</p>}
      
       {weatherData && (
         <div className="weather-cards">
