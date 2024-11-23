@@ -19,6 +19,7 @@ function WeatherApp() {
      
 
     try {
+        setLoading(true);
       const response = await fetch(`${API_URL}?key=${API_KEY}&q=${city}`);
       
       const data = await response.json();
