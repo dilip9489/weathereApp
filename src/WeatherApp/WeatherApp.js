@@ -56,19 +56,19 @@ function WeatherApp() {
         <div className="weather-cards">
           <div className="weather-card">
             <h3>Temperature</h3>
-            <p>{weatherData.current.temp_c} °C</p>
+            <span>{weatherData.current.temp_c} °C</span>
           </div>
           <div className="weather-card">
             <h3>Humidity</h3>
-            <p>{weatherData.current.humidity} %</p>
+            <span>{weatherData.current.humidity} %</span>
           </div>
           <div className="weather-card">
             <h3>Condition</h3>
-            <p>{weatherData.current.condition.text}</p>
+            <span>{weatherData.current.condition.text}</span>
           </div>
           <div className="weather-card">
             <h3>Wind Speed</h3>
-            <p>{weatherData.current.wind_kph} kph</p>
+            <span>{weatherData.current.wind_kph} kph</span>
           </div>
         </div>
       )}
