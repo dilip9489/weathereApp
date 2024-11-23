@@ -41,7 +41,7 @@ function WeatherApp() {
 
   return (
     <div className="weather-app">
-      <div className="search-container">
+      <div className="weather-cards ">
         <input
           type="text"
           value={city}
@@ -53,7 +53,7 @@ function WeatherApp() {
       {loading && <p>Loading data…</p>}
      
       {weatherData && (
-        <div className="weather-cards">
+        <div className="search-container">
           <div className="weather-card">
             <h3>Temperature</h3>
             <p>{weatherData.current.temp_c} °C</p>

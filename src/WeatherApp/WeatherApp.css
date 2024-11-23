@@ -12,11 +12,11 @@
     background-color: rgb(30, 213, 152);
   }
   
-  .search-container {
+  .weather-cards {
     margin-bottom: 50px;
   }
   
-  .search-container input {
+  .weather-cards input {
     margin-top: 60px;
     padding: 10px;
     font-size: 16px;
@@ -25,7 +25,7 @@
     border: none;
   }
   
-  .search-container button {
+  .weather-cards button {
     padding: 10px;
     font-size: 16px;
     margin-left: 10px;
@@ -42,7 +42,7 @@
   
   
   
-  .weather-cards {
+  .search-container {
     display: flex;
     justify-content: center;
     gap: 20px;
